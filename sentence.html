@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flat UI Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI Pro -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  </head>
+  <body>
+    <script src="./header.js"></script>
+    <div class="w3-bar w3-black" align="center">
+      <button class="btn btn-primary" onclick="openCategory('hello')">
+        基本問候語
+      </button>
+      &emsp;
+      <button class="btn btn-primary" onclick="openCategory('traffic')">
+        交通篇
+      </button>
+      &emsp;
+      <button class="btn btn-primary" onclick="openCategory('hotel')">
+        入住篇
+      </button>
+      &emsp;
+      <button class="btn btn-primary" onclick="openCategory('restaurant')">
+        餐廳篇
+      </button>
+      &emsp;
+      <button class="btn btn-primary" onclick="openCategory('shopping')">
+        購物篇
+      </button>
+      &emsp;
+    </div>
+    <div class="container" align="center">
+        <div id="hello" class="container category" style="display:none">
+            <h2>基本問候語</h2></br>
+            <h4><li>안녕하세요</li></br>你好</h4></br>
+            <h4><li>감사합니다 / 고맙습니다</li></br>謝謝</h4></br>
+            <h4><li>안녕히 가세요/안녕히 계세요</li></br>再見</h4></br>
+            <h4><li>잘 지내셨어요?</li></br>過的好嗎?</h4></br>
+            <h4><li>만나서 반갑습니다</li></br>很高興認識你</h4></br>
+            <h4><li>괜찮습니다</li></br>沒關係</h4></br>                
+        </div>
+        <div id="traffic" class="container category" style="display:none">
+            <h2>交通篇</h2></br>
+            <h4><li>이버스가 공항으로 가는거예요?</li></br>請問這是開往機場的巴士嗎?</h4></br>
+            <h4><li>______방향 두장주세요</li></br>請給我兩張往_____方向的票</h4></br>
+            <h4><li>거기에가면 얼마시간을 걸려야해요?</li></br>到那邊大該要多久呢?</h4></br>
+            <h4><li>좀 더 빠르게 갈수있는 방법이 있어요?</li></br>有再更快的方式去那邊嗎?</h4></br>
+            <h4><li>______ 가주세요</li></br>請開去______</h4></br>
+            <h4><li>곧바로/오른쪽으로/왼쪽으로 가주세요</li></br>請直走/往右走/往左走</h4></br>
+            <h4><li>여기에 세워주세요</li></br>請在這邊停車</h4></br>          
+        </div>
+        <div id="hotel" class="container category" style="display:none">
+            <h2>入住篇</h2></br>            
+            <h4><li>몇 시부터 체크인이 가능한가요?</li></br>從幾點開始可以辦理入住呢?</h4></br>
+            <h4><li>몇 시까지 체크아웃해야 해요?</li></br>請問最遲幾點要退房呢?</h4></br>
+            <h4><li>전기어댑터 빌릴 수 있을까요?</li></br>可以借轉換插頭嗎?</h4></br>
+            <h4><li>드라이기가 있어요?</li></br>請問有吹風機嗎?</h4></br>        
+        </div>        
+        <div id="restaurant" class="container category" style="display:none">
+            <h2>餐廳篇</h2></br>            
+            <h4><li>전 ___명 있는데요, 지금 자리있어요?</li></br>我有___位，有位子嗎?</h4></br>
+            <h4><li>전 예약이 없어요</li></br>我沒有預約 </h4></br>
+            <h4><li>전 예약이 있어요</li></br>我有預約</h4></br>
+            <h4><li>중국어/영어 메뉴가 있어요?</li></br>你們有中文/英文的菜單嗎?</h4></br>  
+            <h4><li>이걸 포장 해도돼요?/ 이걸 포장해 주세요</li></br>請問這個可以外帶嗎/請幫我打包</h4></br>
+            <h4><li>배달가능한가요?</li></br>請問可以外送嗎</h4></br>
+            <h4><li>안 맵게 해주세요</li></br>請幫我做不辣的</h4></br>
+            <h4><li>메뉴 주세요</li></br>請給我菜單</h4></br> 
+            <h4><li>물 주세요</li></br>請給我水</h4></br> 
+            <h4><li>반찬 더 주세요</li></br>請給再加一點小菜</h4></br> 
+            <h4><li>삼겨살/계람찜/치즈/볶음밥 추가요</li></br>我要追加五花肉 /蒸蛋/起司/炒飯</h4></br> 
+            <h4><li>___ 인분 주세요</li></br>請給我___人份</h4></br> 
+            <h4><li>더 하나 주세요</li></br>再一份/再一個</h4></br> 
+            <h4><li>계산 해주세요</li></br>請幫我結帳</h4></br>     
+            <h4><li>잘 먹겠습니다</li></br>開動了</h4></br>
+            <h4><li>잘 먹었습니다</li></br>我吃飽了</h4></br>  
+        </div>
+        <div id="shopping" class="container category" style="display:none">
+            <h2>購物篇</h2></br>            
+            <h4><li>이거 얼마예요?</li></br>這個多少錢?</h4></br>
+            <h4><li>할인 하고있어요?</li></br>請問有打折嗎?</h4></br>
+            <h4><li>이거 다른 색깔이 있어요?</li></br>這個有別的顏色嗎?</h4></br>
+            <h4><li>더 큰/작은 사이즈로 주세요</li></br>可以換大一點尺寸給我嗎?</h4></br>
+            <h4><li>S에스/ M엠 /L엘 사이즈 주세요</li></br>可以給我____尺寸的嗎?</h4></br>
+            <h4><li>입어봐도 돼요?</li></br>請問可以試穿這件衣服嗎?</h4></br>  
+            <h4><li>신어봐도 돼요?</li></br>請問可以試穿這雙鞋子嗎?</h4></br>
+            <h4><li>교환이거나 환불이 가능한가요?</li></br>請問可以退換貨嗎?</h4></br>
+            <h4><li>영수증 주세요</li></br>請給我收據</h4></br>
+            <h4><li>수증 버려주세요</li></br>我不需要收據</h4></br>
+            <h4><li>많이 파세요</li></br>祝生意興隆 (離開商店的時候)</h4></br>     
+        </div>
+    
+        <script>
+        function openCategory(categoryName) {
+          var i;
+          var x = document.getElementsByClassName("category");
+          for (i = 0; i < x.length; i++) {
+            x[i].className = "container category animate__animated animate__bounceOutLeft";
+            x[i].style.zIndex = -999;
+          }
+          document.getElementById(categoryName).style.display = "block";
+          document.getElementById(categoryName).className = "container category animate__animated animate__bounceInRight";
+          document.getElementById(categoryName).style.zIndex = 10;
+          document.getElementById(categoryName).style.position = "absolute";
+        }
+      </script>
+    </div>
+    </br></br></br>
+    
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 4 requires Popper.js -->
+    <script src="https://unpkg.com/popper.js@1.14.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+
+    <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+
+    <script src="scripts/flat-ui.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1100,        
+      })
+    </script>
+  </body>
+
+</html>
